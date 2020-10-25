@@ -1,9 +1,15 @@
-<html>
-    <body>
-        <input type="text" id="in" />
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Chat Room</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <input type="text" id="in" />
         <span id="out"></span>
         <script>
-            var conn = new WebSocket("ws://192.168.0.36:8080");
+            var conn = new WebSocket("ws://192.168.0.17:8080");
             conn.onopen = function(e) {
                 console.log("Connection establised!");
             };
@@ -20,5 +26,5 @@
             })
         </script>
 
-    </body>
+  </body>
 </html>
